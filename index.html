@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia La'Gringa · Jatiúca, Maceió</title>
+  <meta name="description" content="Barbearia La'Gringa na Jatiúca, beira-mar de Maceió: corte, degradê, barba, barboterapia e corte infantil. Agende online e compre produtos pelo WhatsApp.">
+  <meta name="theme-color" content="#2a1a10">
+  <link rel="icon" href="img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,700;1,9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <img src="img/logo.jpg" alt="">
+    <div class="loader-word"><span>LA'GRINGA</span><span class="loader-fill" id="loaderFill">LA'GRINGA</span></div>
+    <div class="loader-razor"><i id="loaderRazor"></i></div>
+    <p class="loader-num"><b id="loaderNum">0</b>%</p>
+  </div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="bg-base" id="bgBase" aria-hidden="true"></div>
+  <div class="bg-wipe" id="bgWipe" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#topo" class="brand" aria-label="Barbearia La'Gringa — início"><img src="img/logo.jpg" alt=""><span>La'<i>Gringa</i></span></a>
+    <nav class="links" id="links">
+      <a href="#servicos">Serviços</a>
+      <a href="#loja">Loja</a>
+      <a href="#equipe">Barbeiros</a>
+      <a href="#visite">Visite</a>
+    </nav>
+    <a href="agendar.html" class="btn btn-sun" data-magnetic>Agendar</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <!-- HERO: título no centro, cortes espalhados em volta -->
+  <section class="hero2" id="topo" data-theme="sun">
+    <img class="hero-logo" src="img/logo.jpg" alt="" aria-hidden="true">
+    <div class="hp-wrap" aria-hidden="true">
+      <figure class="hp hp1" data-depth="-0.25"><img src="img/corte-1.jpg" alt=""></figure>
+      <figure class="hp hp2" data-depth="0.18"><img src="img/kids-1.jpg" alt=""></figure>
+      <figure class="hp hp3" data-depth="-0.15"><img src="img/corte-2.jpg" alt=""></figure>
+      <figure class="hp hp4" data-depth="0.22"><img src="img/corte-3.jpg" alt=""></figure>
+      <figure class="hp hp5" data-depth="-0.35"><img src="img/kids-2.jpg" alt=""></figure>
+      <figure class="hp hp6" data-depth="0.3"><img src="img/espaco.jpg" alt=""></figure>
+    </div>
+    <div class="h2-center">
+      <p class="tag">Desde 2021 · Jatiúca, Maceió</p>
+      <h1 class="h2-title">Corte na <em>beira da praia.</em></h1>
+      <p class="h2-sub" data-blur>Degradê, barba, barboterapia e corte infantil, a poucos passos do mar da Jatiúca. Agende em segundos e saia daqui pronto pro rolê.</p>
+      <div class="hero-ctas">
+        <a href="agendar.html" class="btn btn-sun" data-magnetic>Agendar horário</a>
+        <a href="#loja" class="btn btn-line">Ver produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOTO QUE CRESCE ATÉ OCUPAR A TELA -->
+  <section class="grow" id="grow" data-theme="sun" aria-label="O espaço">
+    <div class="grow-pin">
+      <p class="grow-note">Tijolinho, capa listrada, carrinho pros pequenos e cerveja gelada pros grandes.</p>
+      <h2 class="grow-title">Padrão<br><em>Gringo.</em></h2>
+      <div class="grow-card" id="growCard"><img src="img/espaco.jpg" alt="Interior da La'Gringa, com parede de tijolinho, cadeiras de barbeiro e geladeira"><span class="sticker">Desde<br>2021</span></div>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="strip" aria-label="Corte, barba, praia">
+    <div class="strip-track">
+      <span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Barboterapia</span><b>✂</b><span>Jatiúca</span><b>✂</b>
+      <span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Barboterapia</span><b>✂</b><span>Jatiúca</span><b>✂</b>
+      <span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Barboterapia</span><b>✂</b><span>Jatiúca</span><b>✂</b>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" data-theme="earth">
+    <p class="kicker">Por que a La'Gringa</p>
+    <p class="mf" data-blur>Do pai ao filho, todo mundo sai <em>no padrão.</em> Corte bem feito, atendimento de casa e a praia <em>logo ali.</em></p>
+    <ul class="pills">
+      <li>Degradê</li><li>Social</li><li>Barba na navalha</li><li>Barboterapia</li><li>Gringo Kids</li><li>Sobrancelha</li>
+    </ul>
+    <div class="nums">
+      <div><b data-count="2021">0</b><span>desde<br>na Jatiúca</span></div>
+      <div><b data-count="5">0</b><span>barbeiros<br>na equipe</span></div>
+      <div><b data-count="7">0</b><span>dias por semana<br>abertos</span></div>
+      <div><b data-count="50" data-suffix="">0</b><span>reais<br>o corte degradê</span></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos" id="servicos" data-theme="cream">
+    <div class="sec-head">
+      <p class="kicker">Serviços</p>
+      <h2 class="title">O que a gente <em>faz</em></h2>
+    </div>
+    <div class="cards">
+      <article class="card txt" data-cursor="Agendar"><span class="n">01</span><h3>Corte degradê / social</h3><p>Do degradê navalhado ao social clássico, feito pro seu rosto.</p><p class="preco">R$ 50</p></article>
+      <article class="card txt" data-cursor="Agendar"><span class="n">02</span><h3>Barba padrão Gringo</h3><p>Desenho, toalha quente e acabamento na navalha.</p><p class="preco">R$ 40</p></article>
+      <article class="card txt" data-cursor="Agendar"><span class="n">03</span><h3>Corte + barba</h3><p>O combo completo pra sair daqui no padrão.</p><p class="preco">R$ 80</p></article>
+      <article class="card txt" data-cursor="Agendar"><span class="n">04</span><h3>Barboterapia premium</h3><p>Ritual com toalha quente, óleos e massagem.</p><p class="preco">R$ 50</p></article>
+      <article class="card txt" data-cursor="Agendar"><span class="n">05</span><h3>Gringo Kids</h3><p>Corte infantil com paciência, carinho e estilo.</p><p class="preco">R$ 50</p></article>
+      <article class="card txt" data-cursor="Agendar"><span class="n">06</span><h3>Corte + barba + sobrancelha</h3><p>O pacote completo, do topo à sobrancelha.</p><p class="preco">R$ 90</p></article>
+    </div>
+    <p class="note">Valores da página da La'Gringa no Booksy · confirmar antes de publicar</p>
+  </section>
+
+  <!-- LOJA -->
+  <section class="galeria" id="loja" data-theme="sun">
+    <div class="sec-head">
+      <p class="kicker">Loja</p>
+      <h2 class="title">Leve o <em>padrão</em> pra casa.</h2>
+    </div>
+    <div class="produtos">
+      <article class="prod"><div class="prod-ph">💈</div><h3>Minoxidil Kirkland</h3><p>Crescimento de barba e cabelo.</p><span class="preco">R$ —</span><a href="#" class="btn btn-sun js-pedir" data-produto="Minoxidil Kirkland">Pedir no WhatsApp</a></article>
+      <article class="prod"><div class="prod-ph">🧴</div><h3>Pomada modeladora</h3><p>Fixação e acabamento do penteado.</p><span class="preco">R$ —</span><a href="#" class="btn btn-sun js-pedir" data-produto="Pomada modeladora">Pedir no WhatsApp</a></article>
+      <article class="prod"><div class="prod-ph">🫙</div><h3>Óleo para barba</h3><p>Hidrata e deixa a barba alinhada.</p><span class="preco">R$ —</span><a href="#" class="btn btn-sun js-pedir" data-produto="Óleo para barba">Pedir no WhatsApp</a></article>
+    </div>
+    <p class="note">Produtos de exemplo · a loja mostra o que vocês vendem de verdade</p>
+  </section>
+
+  <!-- GALERIA + EQUIPE -->
+  <section class="galeria" id="equipe" data-theme="earth">
+    <div class="sec-head">
+      <p class="kicker">Quem passou por aqui</p>
+      <h2 class="title">Cada corte, <em>no padrão.</em></h2>
+    </div>
+    <div class="rev-slider">
+      <div class="reviews fotos" id="revStrip" data-cursor="Arraste">
+        <figure class="rev foto"><img src="img/corte-1.jpg" alt="Degradê com topete" loading="lazy"></figure>
+        <figure class="rev foto"><img src="img/corte-2.jpg" alt="Degradê com volume penteado" loading="lazy"></figure>
+        <figure class="rev foto"><img src="img/kids-1.jpg" alt="Corte infantil" loading="lazy"></figure>
+        <figure class="rev foto"><img src="img/corte-3.jpg" alt="Social com risca" loading="lazy"></figure>
+        <figure class="rev foto"><img src="img/kids-2.jpg" alt="Cliente mirim satisfeito" loading="lazy"></figure>
+      </div>
+      <button class="rev-arrow prev" id="revPrev" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="rev-arrow next" id="revNext" type="button" aria-label="Próxima foto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="equipe">
+      <p class="kicker">Barbeiros</p>
+      <ul class="pills"><li>Aldson Menezes</li><li>Wender Brito</li><li>Eliton</li><li>Igor C.</li><li>Igor D.</li></ul>
+    </div>
+  </section>
+
+  <!-- VISITE -->
+  <section class="visite" id="visite" data-theme="cream">
+    <div class="vs-text">
+      <p class="kicker">Visite</p>
+      <h2 class="title">Bora <em>marcar?</em></h2>
+      <dl>
+        <div><dt>Endereço</dt><dd>Av. Dr. Antônio Gomes de Barros, 172<br>Jatiúca · Maceió/AL</dd></div>
+        <div><dt>WhatsApp</dt><dd>(82) 9398-7108</dd></div>
+        <div><dt>Horário</dt><dd>Segunda a sábado · 9h às 19h<br>Domingo · 9h às 13h</dd></div>
+      </dl>
+      <div class="vs-ctas">
+        <a href="agendar.html" class="btn btn-dark">Agendar horário</a>
+        <a href="https://maps.app.goo.gl/ruXoVNQV34NPHp9b6" class="btn btn-line" target="_blank" rel="noopener">Como chegar ↗</a>
+      </div>
+    </div>
+    <div class="vs-map"><iframe title="Mapa da Barbearia La'Gringa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Av.%20Dr.%20Ant%C3%B4nio%20Gomes%20de%20Barros%2C%20172%20-%20Jati%C3%BAca%2C%20Macei%C3%B3%20-%20AL&z=16&output=embed"></iframe></div>
+  </section>
+
+  <footer class="footer">
+    <div class="pride-bar" aria-hidden="true"></div>
+    <p class="ft-big" id="ftBig" aria-hidden="true">LA'GRINGA</p>
+    <div class="ft">
+      <a href="#topo" class="brand big"><img src="img/logo.jpg" alt=""><span>La'<i>Gringa</i></span></a>
+      <div class="ft-links">
+        <a href="https://linktr.ee/Barbearia.LaGringa" target="_blank" rel="noopener">Linktree / Instagram</a>
+        <span>WhatsApp (82) 9398-7108</span>
+        <a href="#" class="js-wa">WhatsApp</a>
+        <span>Jatiúca · Maceió · AL</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="agendar.html" class="wa-float" aria-label="Agendar horário">Agendar</a>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js?v=1"></script>
+</body>
+</html>

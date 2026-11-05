@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendar · Barbearia La'Gringa</title>
+  <meta name="description" content="Agende seu horário na Barbearia La'Gringa, na Jatiúca: escolha o serviço, o barbeiro, o dia e a hora.">
+  <meta name="theme-color" content="#2a1a10">
+  <link rel="icon" href="img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,700;1,9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body class="page-agendar" data-theme="sun">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav solid" id="nav">
+    <a href="index.html" class="brand" aria-label="Barbearia La'Gringa — voltar ao site"><img src="img/logo.jpg" alt=""><span>La'<i>Gringa</i></span></a>
+    <a href="index.html" class="btn btn-line nav-back">← Voltar ao site</a>
+  </header>
+
+  <main class="ag">
+    <div class="ag-head">
+      <p class="tag">Agendamento online</p>
+      <h1 class="ag-title">Marca teu <em>horário.</em></h1>
+      <p class="ag-sub">Escolhe o serviço, o barbeiro, o dia e a hora. No final a mensagem já vai pronta pro WhatsApp da La'Gringa, é só enviar.</p>
+    </div>
+
+    <form class="ag-grid" id="agForm" novalidate>
+      <div class="ag-steps">
+
+        <!-- 1. barbearia -->
+        <section class="step" aria-labelledby="s0">
+          <h2 id="s0"><b>1</b>Barbearia</h2>
+          <div class="svc" id="lojaList" role="radiogroup" aria-label="Barbearia"></div>
+        </section>
+
+        <!-- 2. serviço -->
+        <section class="step" aria-labelledby="s1">
+          <h2 id="s1"><b>1</b>Serviço</h2>
+          <div class="svc" id="svcList" role="radiogroup" aria-label="Serviço"></div>
+        </section>
+
+        <!-- 3. barbeiro -->
+        <section class="step" aria-labelledby="s1b">
+          <h2 id="s1b"><b>2</b>Barbeiro</h2>
+          <div class="svc" id="barbList" role="radiogroup" aria-label="Barbeiro"></div>
+        </section>
+
+        <!-- 4. dia -->
+        <section class="step" aria-labelledby="s2">
+          <h2 id="s2"><b>3</b>Dia</h2>
+          <div class="days" id="dayList" role="radiogroup" aria-label="Dia"></div>
+        </section>
+
+        <!-- 5. horário -->
+        <section class="step" aria-labelledby="s3">
+          <h2 id="s3"><b>4</b>Hora</h2>
+          <p class="hint" id="slotHint">Escolhe um dia primeiro.</p>
+          <div class="slots" id="slotList" role="radiogroup" aria-label="Hora"></div>
+        </section>
+
+        <!-- 6. dados -->
+        <section class="step" aria-labelledby="s4">
+          <h2 id="s4"><b>5</b>Teus dados</h2>
+          <div class="fields">
+            <label>Nome<input id="fName" type="text" autocomplete="name" placeholder="Ex.: Rafael" required></label>
+            <label>WhatsApp<input id="fPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(82) 9 9999-9999" required></label>
+            <label class="full">Alguma observação? <span class="opt">(opcional)</span><textarea id="fNote" rows="3" placeholder="Ex.: degradê navalhado, manter o topete…"></textarea></label>
+          </div>
+        </section>
+      </div>
+
+      <!-- resumo -->
+      <aside class="ag-sum" aria-live="polite">
+        <p class="kicker">Resumo</p>
+        <dl>
+          
+          <div><dt>Serviço</dt><dd id="sumSvc">—</dd></div>
+          <div><dt>Barbeiro</dt><dd id="sumBarb">—</dd></div>
+          <div><dt>Dia</dt><dd id="sumDay">—</dd></div>
+          <div><dt>Hora</dt><dd id="sumTime">—</dd></div>
+          <div><dt>Preço</dt><dd id="sumDur">—</dd></div>
+        </dl>
+        <button type="submit" class="btn btn-dark btn-block" id="agSend" disabled>Confirmar no WhatsApp</button>
+        <p class="sum-note" id="sumNote">Falta escolher o serviço e a hora.</p>
+        <p class="sum-demo">Página de exemplo: horários ocupados, barbeiros e preços são ilustrativos.</p>
+      </aside>
+    </form>
+
+    <!-- confirmação -->
+    <div class="ag-done" id="agDone" hidden>
+      <span class="sticker">Padrão<br>Gringo</span>
+      <h2>Pedido <em>enviado!</em></h2>
+      <p>Abrimos o WhatsApp da La'Gringa com a tua mensagem. Assim que confirmarem, teu horário tá garantido.</p>
+      <a href="index.html" class="btn btn-sun">Voltar ao site</a>
+    </div>
+  </main>
+
+  <script src="agenda.js?v=1"></script>
+</body>
+</html>
